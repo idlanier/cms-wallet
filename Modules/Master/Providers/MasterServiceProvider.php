@@ -4,6 +4,10 @@ namespace Modules\Master\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Master\Repository\MasterWallet;
+use Modules\Master\Repository\MasterWalletImpl;
+use Modules\Master\Repository\MasterCtgr;
+use Modules\Master\Repository\MasterCtgrImpl;
 
 class MasterServiceProvider extends ServiceProvider
 {
@@ -93,6 +97,16 @@ class MasterServiceProvider extends ServiceProvider
             app(Factory::class)->load(__DIR__ . '/../Database/factories');
         }
     }
+
+    /**
+    * All of the container singletons that should be registered.
+    *
+    * @var array
+    */
+    public $singletons = [
+        MasterWallet::class     => MasterWalletImpl::class,
+        MasterCtgr::class       => MasterCtgrImpl::class,
+    ];
 
     /**
      * Get the services provided by the provider.
