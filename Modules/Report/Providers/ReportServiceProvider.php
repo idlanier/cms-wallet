@@ -4,6 +4,8 @@ namespace Modules\Report\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Report\Repository\WalletTransactionReport;
+use Modules\Report\Repository\WalletTransactionReportImpl;
 
 class ReportServiceProvider extends ServiceProvider
 {
@@ -93,6 +95,15 @@ class ReportServiceProvider extends ServiceProvider
             app(Factory::class)->load(__DIR__ . '/../Database/factories');
         }
     }
+
+    /**
+    * All of the container singletons that should be registered.
+    *
+    * @var array
+    */
+    public $singletons = [
+        WalletTransactionReport::class => WalletTransactionReportImpl::class,
+    ];
 
     /**
      * Get the services provided by the provider.
