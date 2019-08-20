@@ -4,6 +4,8 @@ namespace Modules\Transaction\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Transaction\Repository\WalletTransaction;
+use Modules\Transaction\Repository\WalletTransactionImpl;
 
 class TransactionServiceProvider extends ServiceProvider
 {
@@ -93,6 +95,15 @@ class TransactionServiceProvider extends ServiceProvider
             app(Factory::class)->load(__DIR__ . '/../Database/factories');
         }
     }
+
+    /**
+    * All of the container singletons that should be registered.
+    *
+    * @var array
+    */
+    public $singletons = [
+        WalletTransaction::class     => WalletTransactionImpl::class,
+    ];
 
     /**
      * Get the services provided by the provider.

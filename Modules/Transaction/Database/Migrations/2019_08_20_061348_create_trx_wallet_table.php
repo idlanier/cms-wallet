@@ -17,9 +17,10 @@ class CreateTrxWalletTable extends Migration
             $table->bigIncrements('trx_wallet_id');
             $table->string('trx_wallet_code', 50);
             $table->text('trx_wallet_desc');
+            $table->string('trx_wallet_date', 8);
             $table->bigInteger('trx_wallet_amount');
-            $table->bigInteger('trx_wallet_id');
-            $table->bigInteger('trx_ctgr_id');
+            $table->bigInteger('wallet_id');
+            $table->bigInteger('ctgr_id');
             $table->bigInteger('trx_status_id');
             $table->timestamps();
         });
