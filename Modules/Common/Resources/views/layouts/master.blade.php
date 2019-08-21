@@ -8,30 +8,30 @@
     <meta name="description" content="bootstrap material admin template">
     <meta name="author" content="">
     
-    <title>Menu Expended | Remark Material Admin Template</title>
+    <title update-title>@yield("page-title")</title>
     
-    <link rel="apple-touch-icon" href="layout-theme/mmenu/assets/images/apple-touch-icon.png">
-    <link rel="shortcut icon" href="layout-theme/mmenu/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ URL::asset('/layout-theme/mmenu/assets/images/apple-touch-icon.png') }}">
+    <link rel="shortcut icon" href="{{ URL::asset('/layout-theme/mmenu/assets/images/favicon.ico') }}">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="layout-theme/global/css/bootstrap.min.css">
-    <link rel="stylesheet" href="layout-theme/global/css/bootstrap-extend.min.css">
-    <link rel="stylesheet" href="layout-theme/mmenu/assets/css/site.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/css/bootstrap-extend.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/mmenu/assets/css/site.min.css') }}">
     
     <!-- Plugins -->
-    <link rel="stylesheet" href="layout-theme/global/vendor/animsition/animsition.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/asscrollable/asScrollable.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/switchery/switchery.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/intro-js/introjs.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/slidepanel/slidePanel.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/jquery-mmenu/jquery-mmenu.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/flag-icon-css/flag-icon.css">
-    <link rel="stylesheet" href="layout-theme/global/vendor/waves/waves.css">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/animsition/animsition.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/asscrollable/asScrollable.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/switchery/switchery.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/intro-js/introjs.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/slidepanel/slidePanel.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/jquery-mmenu/jquery-mmenu.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/flag-icon-css/flag-icon.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/vendor/waves/waves.css') }}">
     
     
     <!-- Fonts -->
-    <link rel="stylesheet" href="layout-theme/global/fonts/material-design/material-design.min.css">
-    <link rel="stylesheet" href="layout-theme/global/fonts/brand-icons/brand-icons.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/fonts/material-design/material-design.min.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/layout-theme/global/fonts/brand-icons/brand-icons.min.css') }}">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
 
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
     <![endif]-->
 
     <!-- Scripts -->
-    <script src="layout-theme/global/vendor/breakpoints/breakpoints.js"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/breakpoints/breakpoints.js') }}"></script>
     <script>
       Breakpoints();
     </script>
@@ -63,12 +63,7 @@
 
     <!-- Page -->
     <div class="page">
-      <div class="page-header">
-        <h1 class="page-title">@yield('title')</h1>
-      </div>
-      <div class="page-content">
         @yield('content')
-      </div>
     </div>
     <!-- End Page -->
 
@@ -77,44 +72,44 @@
     <!-- End Footer -->
 
     <!-- Core  -->
-    <script src="layout-theme/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
-    <script src="layout-theme/global/vendor/jquery/jquery.js"></script>
-    <script src="layout-theme/global/vendor/popper-js/umd/popper.min.js"></script>
-    <script src="layout-theme/global/vendor/bootstrap/bootstrap.js"></script>
-    <script src="layout-theme/global/vendor/animsition/animsition.js"></script>
-    <script src="layout-theme/global/vendor/mousewheel/jquery.mousewheel.js"></script>
-    <script src="layout-theme/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
-    <script src="layout-theme/global/vendor/asscrollable/jquery-asScrollable.js"></script>
-    <script src="layout-theme/global/vendor/waves/waves.js"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/babel-external-helpers/babel-external-helpers.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/jquery/jquery.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/popper-js/umd/popper.min.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/bootstrap/bootstrap.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/animsition/animsition.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/mousewheel/jquery.mousewheel.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/asscrollbar/jquery-asScrollbar.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/asscrollable/jquery-asScrollable.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/waves/waves.js') }}"></script>
     
     <!-- Plugins -->
-    <script src="layout-theme/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js"></script>
-    <script src="layout-theme/global/vendor/switchery/switchery.js"></script>
-    <script src="layout-theme/global/vendor/intro-js/intro.js"></script>
-    <script src="layout-theme/global/vendor/screenfull/screenfull.js"></script>
-    <script src="layout-theme/global/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/jquery-mmenu/jquery.mmenu.min.all.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/switchery/switchery.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/intro-js/intro.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/screenfull/screenfull.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/vendor/slidepanel/jquery-slidePanel.js') }}"></script>
     
     <!-- Scripts -->
-    <script src="layout-theme/global/js/Component.js"></script>
-    <script src="layout-theme/global/js/Plugin.js"></script>
-    <script src="layout-theme/global/js/Base.js"></script>
-    <script src="layout-theme/global/js/Config.js"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Component.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Plugin.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Base.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Config.js') }}"></script>
     
-    <script src="layout-theme/mmenu/assets/js/Section/Menubar.js"></script>
-    <script src="layout-theme/mmenu/assets/js/Section/Sidebar.js"></script>
-    <script src="layout-theme/mmenu/assets/js/Section/PageAside.js"></script>
-    <script src="layout-theme/mmenu/assets/js/Section/GridMenu.js"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/Section/Menubar.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/Section/Sidebar.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/Section/PageAside.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/Section/GridMenu.js') }}"></script>
     
     <!-- Config -->
-    <script src="layout-theme/global/js/config/colors.js"></script>
-    <script src="layout-theme/mmenu/assets/js/config/tour.js"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/config/colors.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/config/tour.js') }}"></script>
     <script>Config.set('assets', '../../assets');</script>
     
     <!-- Page -->
-    <script src="layout-theme/mmenu/assets/js/Site.js"></script>
-    <script src="layout-theme/global/js/Plugin/asscrollable.js"></script>
-    <script src="layout-theme/global/js/Plugin/slidepanel.js"></script>
-    <script src="layout-theme/global/js/Plugin/switchery.js"></script>
+    <script src="{{ URL::asset('/layout-theme/mmenu/assets/js/Site.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Plugin/asscrollable.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Plugin/slidepanel.js') }}"></script>
+    <script src="{{ URL::asset('/layout-theme/global/js/Plugin/switchery.js') }}"></script>
     
     <!-- Angular -->
     <script src="{{ URL::asset('/assets/js/angular.min.js') }}"></script>
@@ -129,6 +124,8 @@
     <script src="{{ URL::asset('/assets/js/select.min.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/angular-sanitize.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/dynamic-number.min.js') }}"></script>
+
+    @yield('script')
 
     <script>
       (function(document, window, $){

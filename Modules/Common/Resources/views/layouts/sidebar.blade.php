@@ -18,12 +18,12 @@
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                    <a class="animsition-link" href="/master/wallet#!viewWalletList">
                       <span class="site-menu-title">Dompet</span>
                     </a>
                   </li>
                   <li class="site-menu-item active">
-                    <a class="animsition-link" href="../layouts/menu-expended.html">
+                    <a class="animsition-link" href="/master/ctgr#!viewCategoryList">
                       <span class="site-menu-title">Kategori</span>
                     </a>
                   </li>
@@ -39,12 +39,12 @@
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                    <a class="animsition-link" href="/transaction/transaction#!/viewAddWalletTransactionIn">
                       <span class="site-menu-title">Dompet Masuk</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-expended.html">
+                    <a class="animsition-link" href="/transaction/transaction#!/viewAddWalletTransactionOut">
                       <span class="site-menu-title">Dompet Keluar</span>
                     </a>
                   </li>
@@ -60,7 +60,7 @@
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="../layouts/menu-collapsed.html">
+                    <a class="animsition-link" href="/report/report#!/viewWalletTransactionReport">
                       <span class="site-menu-title">Laporan Transaksi</span>
                     </a>
                   </li>
