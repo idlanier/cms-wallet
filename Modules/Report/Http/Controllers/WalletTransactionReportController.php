@@ -33,7 +33,16 @@ class WalletTransactionReportController extends Controller
      */
     public function index()
     {
-        return view('master::index');
+        return view('report::walletTransactionReport.index');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewWalletTransactionReport()
+    {
+        return view('report::walletTransactionReport.viewWalletTransactionReport');
     }
 
     /**
