@@ -9,8 +9,19 @@
   
       function MasterWalletController(MasterWalletService, $state, $uibModal, $scope, $stateParams) {
 
-          var ctrl = $scope;
+        var ctrl = $scope;
+        
+        $scope.goToAddWallet = function(){
+            $state.go('addWallet');
+        }
 
+        $scope.goToDetailWallet = function(){
+            $state.go('detailWallet', {id: 1});
+        }
+
+        $scope.goToEditWallet = function(){
+            $state.go('editWallet', {id: 1});
+        }
   
       };
   

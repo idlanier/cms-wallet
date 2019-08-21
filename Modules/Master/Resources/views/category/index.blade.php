@@ -1,6 +1,6 @@
 @extends('common::layouts.master')
-@section('title')
-    Kelola Category
+@section('page-title')
+    Master Category
 @endsection
 @section('script')
     <script src="{{ URL::asset('/cms-wallet/masterCategory/js/masterCategoryModule.js')}}"></script>
@@ -11,5 +11,7 @@
     <script src="{{ URL::asset('/cms-wallet/masterCategory/js/masterCategoryDetailController.js')}}"></script>
 @endsection
 @section('content')
-    <ui-view></ui-view>
+    <div id="content" ng-app="categoryModule">
+        <div ui-view></div>
+    </div>
 @endsection
