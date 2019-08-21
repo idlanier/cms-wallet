@@ -13,4 +13,10 @@
 
 Route::prefix('transaction')->group(function() {
     Route::get('/', 'TransactionController@index');
+
+    // Route Transaction Wallet
+    Route::post('/addTrxWalletIn', 'WalletTransactionController@addTrxWalletIn');
+    Route::post('/addTrxWalletOut', 'WalletTransactionController@addTrxWalletOut');
+    Route::get('/getTrxList', 'WalletTransactionController@getTrxList');
+    Route::get('/findTrxWalletById', 'WalletTransactionController@findTrxWalletById');
 });
