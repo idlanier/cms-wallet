@@ -9,8 +9,11 @@
   
       function MasterWalletEditController(MasterWalletService, $state, $uibModal, $scope, $stateParams) {
 
-          var ctrl = $scope;
+        var ctrl = $scope;
 
+        $scope.goToWalletList = function(){
+            $state.go('viewWalletList');
+        }
   
       };
   
