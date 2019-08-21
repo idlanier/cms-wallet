@@ -37,6 +37,42 @@ class MasterCategoryController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewCtgrList()
+    {
+        return view('master::category.viewCategoryList');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewAddCtgr()
+    {
+        return view('master::category.addCategory');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewEditCtgr()
+    {
+        return view('master::category.editCategory');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewDetailCtgr()
+    {
+        return view('master::category.detailCategory');
+    }
+
+    /**
      * Add Ctgr
      * @param Request $request->ctgr_name
      * @param Request $request->ctgr_desc
