@@ -9,8 +9,11 @@
   
       function MasterCategoryDetailController(MasterCategoryService, $state, $uibModal, $scope, $stateParams) {
 
-          var ctrl = $scope;
+        var ctrl = $scope;
 
+        $scope.goToCategoryList = function(){
+            $state.go('viewCategoryList');
+        }
   
       };
   

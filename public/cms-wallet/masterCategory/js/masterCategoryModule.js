@@ -11,22 +11,22 @@
             $stateProvider
                 .state('viewCategoryList', {
                     url:'/viewCategoryList',
-                    templateUrl: '/master/viewCategoryList',
+                    templateUrl: '/master/viewCtgrList',
                     controller: 'MasterCategoryController as masterCategoryController'
                 })
                 .state('editCategory', {
                     url: '/editCategory/:id',
-                    templateUrl: '/master/viewEditCategory',
+                    templateUrl: '/master/viewEditCtgr',
                     controller: 'MasterCategoryEditController as masterCategoryEditController'
                 })
                 .state('addCategory', {
                     url: '/addCategory',
-                    templateUrl: '/master/viewAddCategory',
+                    templateUrl: '/master/viewAddCtgr',
                     controller: 'MasterCategoryAddController as masterCategoryAddController'
                 })
                 .state('detailCategory', {
                     url: '/detailCategory/:id',
-                    templateUrl: '/master/viewDetailCategory',
+                    templateUrl: '/master/viewDetailCtgr',
                     controller: 'MasterCategoryDetailController as masterCategoryDetailController'
                 })
 
