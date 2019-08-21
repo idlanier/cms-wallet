@@ -5,13 +5,13 @@ namespace Modules\Transaction\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use App\Repository\WalletTransaction;
+use Modules\Transaction\Repository\WalletTransaction;
 
 class WalletTransactionController extends Controller
 {
     /**
      * 
-     * @var App\Repository\WalletTransaction;
+     * @var Modules\Transaction\Repository\WalletTransaction;
      */
     protected $walletTransactionRepository;
 
@@ -33,7 +33,43 @@ class WalletTransactionController extends Controller
      */
     public function index()
     {
-        return view('master::index');
+        return view('transaction::walletTransaction.index');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewWalletTransactionAddIn()
+    {
+        return view('transaction::walletTransaction.viewWalletTransactionAddIn');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewWalletTransactionAddOut()
+    {
+        return view('transaction::walletTransaction.viewWalletTransactionAddOut');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewAddWalletTransactionIn()
+    {
+        return view('transaction::walletTransaction.addTransactionWalletIn');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewAddWalletTransactionOut()
+    {
+        return view('transaction::walletTransaction.addTransactionWalletOut');
     }
 
     /**

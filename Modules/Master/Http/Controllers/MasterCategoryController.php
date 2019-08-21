@@ -5,7 +5,7 @@ namespace Modules\Master\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use App\Repository\MasterCtgr;
+use Modules\Master\Repository\MasterCtgr;
 
 class MasterCategoryController extends Controller
 {
@@ -33,7 +33,7 @@ class MasterCategoryController extends Controller
      */
     public function index()
     {
-        return view('master::index');
+        return view('master::category.index');
     }
 
     /**
