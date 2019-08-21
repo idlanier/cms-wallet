@@ -13,4 +13,8 @@
 
 Route::prefix('report')->group(function() {
     Route::get('/', 'ReportController@index');
+
+    // Route for Wallet Transaction Report
+    Route::get('/getWalletTransactionReport', 'WalletTransactionReportController@getWalletTransactionReport');
+
 });
