@@ -8,28 +8,28 @@
 		    $interpolateProvider.endSymbol(']]');
 
             $stateProvider
-                .state('viewAddWalletTransactionIn', {
-                    url:'/viewAddWalletTransactionIn',
-                    templateUrl: '/transaction/viewAddWalletTransactionIn',
-                    controller: 'WalletTransactionAddInController as walletTransactionAddInController'
+                .state('viewWalletTransactionIn', {
+                    url:'/viewWalletTransactionIn',
+                    templateUrl: '/transaction/viewWalletTransactionIn',
+                    controller: 'WalletTransactionInController as walletTransactionInController'
                 })
-                .state('viewAddWalletTransactionOut', {
-                    url:'/viewAddWalletTransactionOut',
-                    templateUrl: '/transaction/viewAddWalletTransactionOut',
-                    controller: 'WalletTransactionAddOutController as walletTransactionAddOutController'
+                .state('viewWalletTransactionOut', {
+                    url:'/viewWalletTransactionOut',
+                    templateUrl: '/transaction/viewWalletTransactionOut',
+                    controller: 'WalletTransactionOutController as walletTransactionOutController'
                 })
                 .state('addWalletTransactionOut', {
                     url: '/addWalletTransactionOut',
-                    templateUrl: '/transaction/viewWalletAddTransactionOut',
-                    controller: 'WalletTransactionOutController as walletTransactionOutController'
+                    templateUrl: '/transaction/addTransactionWalletOutView',
+                    controller: 'WalletTransactionAddOutController as walletTransactionAddOutController'
                 })
                 .state('addWalletTransactionIn', {
                     url: '/addWalletTransactionIn',
-                    templateUrl: '/transaction/viewWalletAddTransactionIn',
-                    controller: 'WalletTransactionInController as walletTransactionInController'
+                    templateUrl: '/transaction/addTransactionWalletInView',
+                    controller: 'WalletTransactionAddInController as walletTransactionAddInController'
                 })
 
-            $urlRouterProvider.otherwise('/viewAddWalletTransactionIn');
+            $urlRouterProvider.otherwise('/viewWalletTransactionIn');
 
         });
 
