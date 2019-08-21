@@ -5,13 +5,13 @@ namespace Modules\Report\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use App\Repository\WalletTransactionReport;
+use Modules\Report\Repository\WalletTransactionReport;
 
 class WalletTransactionReportController extends Controller
 {
     /**
      * 
-     * @var App\Repository\WalletTransactionReport;
+     * @var Modules\Report\Repository\WalletTransactionReport;
      */
     protected $walletTransactionReportRepository;
 
