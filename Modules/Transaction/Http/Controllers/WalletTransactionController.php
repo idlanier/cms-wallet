@@ -40,25 +40,25 @@ class WalletTransactionController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
-    public function viewWalletTransactionAddIn()
+    public function viewWalletTransactionIn()
     {
-        return view('transaction::walletTransaction.viewWalletTransactionAddIn');
+        return view('transaction::walletTransaction.viewWalletTransactionIn');
     }
 
     /**
      * Display a listing of the resource.
      * @return Response
      */
-    public function viewWalletTransactionAddOut()
+    public function viewWalletTransactionOut()
     {
-        return view('transaction::walletTransaction.viewWalletTransactionAddOut');
+        return view('transaction::walletTransaction.viewWalletTransactionOut');
     }
 
     /**
      * Display a listing of the resource.
      * @return Response
      */
-    public function viewAddWalletTransactionIn()
+    public function addTransactionWalletInView()
     {
         return view('transaction::walletTransaction.addTransactionWalletIn');
     }
@@ -67,7 +67,7 @@ class WalletTransactionController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
-    public function viewAddWalletTransactionOut()
+    public function addTransactionWalletOutView()
     {
         return view('transaction::walletTransaction.addTransactionWalletOut');
     }
