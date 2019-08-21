@@ -9,9 +9,12 @@
   
       function WalletTransactionOutController(WalletTransactionService, $state, $uibModal, $scope, $stateParams) {
 
-          var ctrl = $scope;
+        var ctrl = $scope;
 
-  
+        $scope.goToAddTransactionWalletOut = function(){
+            $state.go('addWalletTransactionOut');
+        }
+
       };
   
   })()

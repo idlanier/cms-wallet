@@ -16,10 +16,10 @@ Route::prefix('transaction')->group(function() {
 
     // Route View Transaction Wallet
     Route::get('/transaction', 'WalletTransactionController@index');
-    Route::get('/viewAddWalletTransactionIn', 'WalletTransactionController@viewAddWalletTransactionIn');
-    Route::get('/viewAddWalletTransactionOut', 'WalletTransactionController@viewAddWalletTransactionOut');
-    Route::get('/viewWalletAddTransactionIn', 'WalletTransactionController@viewWalletAddTransactionIn');
-    Route::get('/viewWalletAddTransactionOut', 'WalletTransactionController@viewWalletAddTransactionOut');
+    Route::get('/viewWalletTransactionIn', 'WalletTransactionController@viewWalletTransactionIn');
+    Route::get('/viewWalletTransactionOut', 'WalletTransactionController@viewWalletTransactionOut');
+    Route::get('/addTransactionWalletInView', 'WalletTransactionController@addTransactionWalletInView');
+    Route::get('/addTransactionWalletOutView', 'WalletTransactionController@addTransactionWalletOutView');
 
     // Route Transaction Wallet Repository
     Route::post('/addTrxWalletIn', 'WalletTransactionController@addTrxWalletIn');

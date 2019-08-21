@@ -39,12 +39,12 @@
                     </a>
                 <ul class="site-menu-sub">
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="/transaction/transaction#!/viewAddWalletTransactionIn">
+                    <a class="animsition-link" href="/transaction/transaction#!/viewWalletTransactionIn">
                       <span class="site-menu-title">Dompet Masuk</span>
                     </a>
                   </li>
                   <li class="site-menu-item">
-                    <a class="animsition-link" href="/transaction/transaction#!/viewAddWalletTransactionOut">
+                    <a class="animsition-link" href="/transaction/transaction#!/viewWalletTransactionOut">
                       <span class="site-menu-title">Dompet Keluar</span>
                     </a>
                   </li>
