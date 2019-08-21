@@ -5,15 +5,15 @@ namespace Modules\Master\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use App\Repository\MasterWallet;
+use Modules\Master\Repository\MasterWallet;
 
 class MasterWalletController extends Controller
 {
     /**
      * 
-     * @var App\Repository\MasterWallet;
+     * @var Modules\Master\Repository\MasterWallet;
      */
-    protected $masterWalletRepository;
+    protected $masterWalletRepo;
 
     /**
      * Create a new controller instance.
@@ -24,7 +24,7 @@ class MasterWalletController extends Controller
     {
         $this->middleware('auth');
 
-        $this->masterWalletRepository = $masterWallet;
+        $this->masterWalletRepo = $masterWallet;
     }
 
     /**
@@ -33,7 +33,43 @@ class MasterWalletController extends Controller
      */
     public function index()
     {
-        return view('master::index');
+        return view('master::wallet.index');
+    }
+    
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewWalletList()
+    {
+        return view('master::wallet.viewWalletList');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewAddWallet()
+    {
+        return view('master::wallet.addWallet');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewEditWallet()
+    {
+        return view('master::wallet.editWallet');
+    }
+
+    /**
+     * Display a listing of the resource.
+     * @return Response
+     */
+    public function viewDetailWallet()
+    {
+        return view('master::wallet.detailWallet');
     }
 
     /**
